@@ -76,16 +76,16 @@ $(document).ready(function() {
 			
 			echo "<fieldset><legend>". __('Contact Information')."</legend>";
 			echo "<div class='form-group'>";	
-			echo '<label class="control-label col-md-2" for="email">'. __("Home Town Address").'<span class="text-danger"> *</span></label>';
+			echo '<label class="control-label col-md-2" for="email">'. __("Home Town Address").'<span class="text-danger"> </span></label>';
 			echo '<div class="col-md-6">';
-			echo $this->Form->input("",["label"=>false,"name"=>"address","class"=>"form-control validate[required]","value"=>(($edit)?$data['address']:'')]);
+			echo $this->Form->input("",["label"=>false,"name"=>"address","class"=>"form-control ","value"=>(($edit)?$data['address']:'')]);
 			echo "</div>";	
 			echo "</div>";	
 			
 			echo "<div class='form-group'>";	
-			echo '<label class="control-label col-md-2" for="email">'. __("City").'<span class="text-danger"> *</span></label>';
+			echo '<label class="control-label col-md-2" for="email">'. __("City").'<span class="text-danger"> </span></label>';
 			echo '<div class="col-md-6">';
-			echo $this->Form->input("",["label"=>false,"name"=>"city","class"=>"form-control validate[required]","value"=>(($edit)?$data['city']:'')]);
+			echo $this->Form->input("",["label"=>false,"name"=>"city","class"=>"form-control ","value"=>(($edit)?$data['city']:'')]);
 			echo "</div>";	
 			echo "</div>";
 			
@@ -94,7 +94,7 @@ $(document).ready(function() {
 			echo '<div class="col-md-6">';
 			echo '<div class="input-group">';
 			echo '<div class="input-group-addon">+'.$this->Gym->getCountryCode($this->Gym->getSettings("country")).'</div>';
-			echo $this->Form->input("",["label"=>false,"name"=>"mobile","class"=>"form-control validate[required]","value"=>(($edit)?$data['mobile']:''),"style"=>"z-index:1"]);
+			echo $this->Form->input("",["label"=>false,"name"=>"mobile","class"=>"form-control ","value"=>(($edit)?$data['mobile']:''),"style"=>"z-index:1"]);
 			echo "</div>";	
 			echo "</div>";	
 			echo "</div>";	
@@ -109,7 +109,7 @@ $(document).ready(function() {
 			echo "<div class='form-group'>";	
 			echo '<label class="control-label col-md-2" for="email">'. __("Email").'<span class="text-danger"> *</span></label>';
 			echo '<div class="col-md-6">';
-			echo $this->Form->input("",["label"=>false,"name"=>"email","class"=>"form-control validate[required,custom[email]]","value"=>(($edit)?$data['email']:'')]);
+			echo $this->Form->input("",["label"=>false,"name"=>"email","class"=>"form-control","value"=>(($edit)?$data['email']:'')]);
 			echo "</div>";	
 			echo "</div>";			
 			echo "</fieldset>";
