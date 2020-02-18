@@ -144,7 +144,7 @@ function validate_multiselect()
 			echo "<div class='form-group'>";	
 			echo '<label class="control-label col-md-2" for="email">'. __("Email").'<span class="text-danger"> *</span></label>';
 			echo '<div class="col-md-6">';
-			echo $this->Form->input("",["label"=>false,"name"=>"email","class"=>"form-control validate[required,custom[email]]","value"=>(($edit)?$data['email']:'')]);
+			echo $this->Form->input("",["label"=>false,"name"=>"email","class"=>"form-control","value"=>(($edit)?$data['email']:'')]);
 			echo "</div>";	
 			echo "</div>";			
 			echo "</fieldset>";
